@@ -1,4 +1,5 @@
 from flask import Flask
+from flask import render_template
 
 # web server from Flask
 
@@ -11,6 +12,13 @@ app = Flask(__name__)
 def get_index():
     return "<p>Andreas web page</p>"
 
+# 
+# data injection from a template
 @app.route("/welcome")
 def get_welcome():
-    return "<p>Welcome</p>"
+    return render_template('welcome.html', name="Andreas")
+
+@app.route("/welcome")
+def get_santa():
+    return render_template('welcome.html', name='santa')
+
