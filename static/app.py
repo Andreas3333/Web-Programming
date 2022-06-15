@@ -2,7 +2,7 @@ from flask import Flask
 
 # web server from Flask
 
-app = Flash(__name__)
+app = Flask(__name__)
 
 # decorator used
 # route specifer returns computational recource
