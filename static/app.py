@@ -10,3 +10,7 @@ app = Flask(__name__)
 @app.route("/")
 def get_index():
     return "<p>Andreas web page</p>"
+
+@app.route("/welcome")
+def get_welcome():
+    return "<p>Welcome</p>"
