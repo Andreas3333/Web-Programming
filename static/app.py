@@ -20,5 +20,8 @@ def get_welcome():
 
 @app.route("/welcome")
 def get_santa():
-    return render_template('welcome.html', name='santa')
+    return render_template('welcome.html', name="Santa")
 
+@.route("/hi/abc")
+def get_hi():
+    return render_template('welcome.html', name="Jon")
