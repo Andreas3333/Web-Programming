@@ -19,7 +19,7 @@ def get_hello():
 @app.route("/santa")
 def get_santa():
     toy = request.args.get("dog")
-    return render_template('hello.html', name="Santa)
+    return render_template('hello.html', name="Santa")
 
 @app.route("/hi")
 @app.route("/hi/")
